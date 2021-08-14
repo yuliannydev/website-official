@@ -1,0 +1,57 @@
+fragment Asset on Asset {
+  stage
+  locale
+  remoteId: id
+  createdAt(variation: COMBINED)
+  updatedAt(variation: COMBINED)
+  publishedAt(variation: COMBINED)
+  handle
+  fileName
+  height
+  width
+  size
+  mimeType
+  createdBy {
+    ... on User {
+      remoteTypeName: __typename
+      remoteId: id
+      stage
+    }
+  }
+  updatedBy {
+    ... on User {
+      remoteTypeName: __typename
+      remoteId: id
+      stage
+    }
+  }
+  publishedBy {
+    ... on User {
+      remoteTypeName: __typename
+      remoteId: id
+      stage
+    }
+  }
+  coverPost {
+    ... on Post {
+      remoteTypeName: __typename
+      remoteId: id
+      stage
+    }
+  }
+  imageSeo {
+    ... on Seo {
+      remoteTypeName: __typename
+      remoteId: id
+      stage
+    }
+  }
+  coverPortfolio {
+    ... on Portfolio {
+      remoteTypeName: __typename
+      remoteId: id
+      stage
+    }
+  }
+  url
+}
