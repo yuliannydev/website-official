@@ -1,54 +1,40 @@
-import * as React from "react"
-import { Link } from "gatsby"
+import * as React from "react";
+import { Link } from "gatsby";
+import { pageStyles, headingStyles, paragraphStyles } from "../styles/styles";
 
-// styles
-const pageStyles = {
-  color: "#232129",
-  padding: "96px",
-  fontFamily: "-apple-system, Roboto, sans-serif, serif",
-}
-const headingStyles = {
-  marginTop: 0,
-  marginBottom: 64,
-  maxWidth: 320,
-}
-
-const paragraphStyles = {
-  marginBottom: 48,
-}
 const codeStyles = {
   color: "#8A6534",
   padding: 4,
   backgroundColor: "#FFF4DB",
   fontSize: "1.25rem",
   borderRadius: 4,
-}
+};
 
 // markup
 const NotFoundPage = () => {
   return (
     <main style={pageStyles}>
       <title>Not found</title>
-      <h1 style={headingStyles}>Page not found</h1>
+      <h1 style={headingStyles}>Página no encontrada</h1>
       <p style={paragraphStyles}>
-        Sorry{" "}
+        Lo siento{" "}
         <span role="img" aria-label="Pensive emoji">
           😔
         </span>{" "}
-        we couldn’t find what you were looking for.
+        no sé que estás buscando.
         <br />
         {process.env.NODE_ENV === "development" ? (
           <>
             <br />
-            Try creating a page in <code style={codeStyles}>src/pages/</code>.
+            Crea una página en <code style={codeStyles}>src/pages/</code>.
             <br />
           </>
         ) : null}
         <br />
-        <Link to="/">Go home</Link>.
+        <Link to="/">Regresar</Link>
       </p>
     </main>
-  )
-}
+  );
+};
 
-export default NotFoundPage
+export default NotFoundPage;
