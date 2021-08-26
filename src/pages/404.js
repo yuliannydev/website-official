@@ -1,20 +1,13 @@
 import * as React from "react";
 import { Link } from "gatsby";
-import { pageStyles, headingStyles, paragraphStyles } from "../styles/styles";
-
-const codeStyles = {
-  color: "#8A6534",
-  padding: 4,
-  backgroundColor: "#FFF4DB",
-  fontSize: "1.25rem",
-  borderRadius: 4,
-};
+import { headingStyles, paragraphStyles, codeStyles } from "../styles/styles";
+import Layout from "../components/Layout";
 
 // markup
 const NotFoundPage = () => {
   return (
-    <main style={pageStyles}>
-      <title>Not found</title>
+    <Layout>
+      <title>No encontrado</title>
       <h1 style={headingStyles}>Página no encontrada</h1>
       <p style={paragraphStyles}>
         Lo siento{" "}
@@ -33,7 +26,7 @@ const NotFoundPage = () => {
         <br />
         <Link to="/">Regresar</Link>
       </p>
-    </main>
+    </Layout>
   );
 };
 

@@ -1,7 +1,7 @@
 /* STYLES */
 export const pageStyles = {
   color: "#232129",
-  padding: 96,
+  padding: 48,
   fontFamily: "-apple-system, Roboto, sans-serif, serif",
 };
 
@@ -17,6 +17,14 @@ export const headingAccentStyles = {
 
 export const paragraphStyles = {
   marginBottom: 48,
+};
+
+export const codeStyles = {
+  color: "#8A6534",
+  padding: 4,
+  backgroundColor: "#FFF4DB",
+  fontSize: "1.25rem",
+  borderRadius: 4,
 };
 
 /* export const linkStyle = {
