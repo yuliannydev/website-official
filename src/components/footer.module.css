@@ -1,6 +1,20 @@
-.footer {
+/* .footer {
+   bottom: 0;
+  position: absolute;
   text-align: center;
   color: #000000;
   background-color: #f4f4f4;
-  padding: 1rem;
+  padding: 1.5rem;
+  
+  width: -moz-available; 
+}
+ */
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #f4f4f4;
+  color: #000;
+  text-align: center;
 }

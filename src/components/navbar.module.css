@@ -4,17 +4,20 @@
   align-items: center;
   text-align: center;
   background-color: #f3f3f3;
-  padding: 2rem;
+  padding: 1.5rem;
 }
 .nav-links {
   display: flex;
+  justify-content: center;
   list-style: none;
+  line-height: 1.6;
   margin: 0;
   padding: 0;
 }
 .nav-links-items {
-  padding-right: 2rem;
+  padding-right: 1rem;
 }
 .nav-links-texts {
   text-decoration: none;
+  text-transform: uppercase;
 }

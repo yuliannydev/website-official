@@ -13,6 +13,7 @@ const Footer = () => {
           />
         </span>
       </p>
+      <p>Yulianny Betancourt - 2021 </p>
     </footer>
   );
 };
