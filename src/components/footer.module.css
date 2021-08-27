@@ -1,12 +1,9 @@
 /* .footer {
-   bottom: 0;
-  position: absolute;
-  text-align: center;
-  color: #000000;
-  background-color: #f4f4f4;
-  padding: 1.5rem;
-  
-  width: -moz-available; 
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  margin: 0;
+  padding: 0;
 }
  */
 .footer {
