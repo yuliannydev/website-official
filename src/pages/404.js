@@ -1,6 +1,6 @@
 import * as React from "react";
 import { Link } from "gatsby";
-import { headingStyles, paragraphStyles, codeStyles } from "../styles/styles";
+import { codeStyles } from "../styles/styles";
 import Layout from "../components/Layout";
 
 // markup
@@ -8,8 +8,8 @@ const NotFoundPage = () => {
   return (
     <Layout>
       <title>No encontrado</title>
-      <h1 style={headingStyles}>Página no encontrada</h1>
-      <p style={paragraphStyles}>
+      <h1>Página no encontrada</h1>
+      <p>
         Lo siento{" "}
         <span role="img" aria-label="Pensive emoji">
           😔
