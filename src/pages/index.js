@@ -1,7 +1,7 @@
 import * as React from "react";
 import Layout from "../components/Layout";
 
-// markup
+// Homepage
 const IndexPage = () => {
   return (
     <Layout>
@@ -9,7 +9,7 @@ const IndexPage = () => {
       <h1>
         Hola{" "}
         <span role="img" aria-label="World emoji">
-          🌏
+          🌏 
         </span>
         <br />
         <span>— estoy en </span>

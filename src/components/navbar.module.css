@@ -1,11 +1,10 @@
-* {
+/* * {
   margin: 0;
-}
+} */
 .navbar {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  text-align: center; 
+  justify-content:flex-end;
+  align-items: center; 
   background-color: #f3f3f3;
   padding: 1.5rem;
   

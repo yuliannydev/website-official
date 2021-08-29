@@ -10,13 +10,12 @@ import {
 const Navbar = () => {
   return (
     <nav className={navbar}>
-      <span role="img" aria-label="Rayito">
-        ⚡
-      </span>
       <ul className={navLinks}>
         <li className={navLinksItems}>
           <Link className={navLinksTexts} to="/">
-            Inicio
+          <span role="img" aria-label="Rayito">
+            ⚡
+          </span>
           </Link>
         </li>
         <li className={navLinksItems}>
