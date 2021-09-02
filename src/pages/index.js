@@ -13,10 +13,9 @@ const IndexPage = () => {
           🌏 
         </span>
         <br />
-        <span>— estoy en </span>
-        <span role="img" aria-label="Construcction emoji">
-          🚧
-        </span>
+        <span>— Mi nombre es Yulianny Betancourt</span>
+        <br />
+        <span>— Soy Ingeniero de Sistemas</span>
       </h1>
       <ul className={listLinks}>
                 <li className={links}>
