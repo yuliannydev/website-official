@@ -1,13 +1,10 @@
-/* * {
-  margin: 0;
-} */
 .navbar {
   display: flex;
   justify-content:flex-end;
   align-items: center; 
-  background-color: #f3f3f3;
+  background-color: #49b3b3;
   padding: 1.5rem;
-  
+  letter-spacing: 0.1em;;
 }
 .nav-links {
   text-transform: uppercase;
@@ -20,5 +17,6 @@
 }
 .nav-links-texts {
   text-decoration: none;
+  color: #fff;
 }
 

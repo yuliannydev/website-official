@@ -1,24 +1,13 @@
-.layout {
-  /* margin: 0; */
-  padding: 0;
-}
-
 .content {
-  padding: 2rem;
-  width: 70%;
-  margin: auto;
-  display: flex;
+  /* padding: 2rem;
+  width: 70%; */
+  margin: 10px auto;
+  padding: 30px 40px;
+  max-width: 80%;
+  box-sizing: border-box;
+  /* display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: center; */
 }
 
-* {
-  line-height: 1.6em;
-}
-body {
-  margin: 0;
-}
-h1 {
-  font-family: "Nanum Gothic";
-}
 

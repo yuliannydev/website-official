@@ -1,0 +1,15 @@
+.links {
+    list-style-type: none;
+    display: inline-block;
+    margin: 20px 20px;
+    padding: 10px 0;
+    /* margin: 50px 30px;
+    padding: 30px 40px; */
+   /*  max-width: 60%; */
+}
+
+.list-links {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
