@@ -11,5 +11,5 @@
 .list-links {
     display: flex;
     align-items: center;
-    justify-content: left;
+    justify-content: center;
 }

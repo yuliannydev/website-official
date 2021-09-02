@@ -1,6 +1,7 @@
 import * as React from "react";
 import Layout from "../components/Layout";
 import { links, listLinks } from "./socialLinks.module.css"
+import "./index.module.css"
 
 // Homepage
 const IndexPage = () => {
@@ -8,14 +9,15 @@ const IndexPage = () => {
     <Layout>
       <title>Inicio</title>
       <h1>
+      <br />
         Hola{" "}
         <span role="img" aria-label="World emoji">
           🌏 
         </span>
         <br />
-        <span>— Mi nombre es Yulianny Betancourt</span>
+        <span>— Mi nombre es <b>Yulianny Betancourt</b></span>
         <br />
-        <span>— Soy Ingeniero de Sistemas</span>
+        <span>— Soy <b>Ingeniero de Sistemas</b></span>
       </h1>
       <ul className={listLinks}>
                 <li className={links}>

@@ -1,9 +1,9 @@
 .content {
-  /* padding: 2rem;
-  width: 70%; */
+  /* padding: 2rem; */
+  width: 100%;
   margin: 10px auto;
   padding: 30px 40px;
-  max-width: 80%;
+  max-width: 1200px;
   box-sizing: border-box;
   /* display: flex;
   align-items: center;
