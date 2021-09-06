@@ -7,7 +7,7 @@
   letter-spacing: 0.1em;;
 }
 .nav-links {
-  text-transform: uppercase;
+  text-transform: capitalize;
   display: flex;
   list-style: none;
   line-height: 1.6;
@@ -18,5 +18,9 @@
 .nav-links-texts {
   text-decoration: none;
   color: #fff;
+}
+
+.nav-links-texts:hover {
+  color: purple;
 }
 

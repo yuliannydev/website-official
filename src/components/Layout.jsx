@@ -7,6 +7,7 @@ import "./styles/global.css";
 const Layout = ({ children }) => {
   return (
     <div className={layout}>
+     {/* // TODO: Hacer component SEO */}
       <Navbar />
       <div className={content}>{children}</div>
       <Footer />
