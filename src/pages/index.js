@@ -37,7 +37,7 @@ const IndexPage = () => {
                 </li>
                 <li className={links}>
                 <a 
-                    href="https://github.com/yuliannydev" 
+                    href="https://github.com/yuliannydev/" 
                     target="_blank"
                     rel="noopener noreferrer">
                         <svg 
@@ -52,7 +52,7 @@ const IndexPage = () => {
                 </li>
                 <li className={links}>
                 <a 
-                    href="https://twitter.com/yuliannydev" 
+                    href="https://twitter.com/yuliannydev/" 
                     target="_blank"
                     rel="noopener noreferrer">
                         <svg 
