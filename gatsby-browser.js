@@ -1,3 +1,2 @@
-import "@fontsource/nanum-gothic-coding"
-import "@fontsource/nanum-gothic"
-import "@fontsource/gothic-a1"
+import "@fontsource/open-sans"
+import "@fontsource/ibm-plex-mono"

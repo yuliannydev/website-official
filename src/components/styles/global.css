@@ -8,12 +8,12 @@ html, body {
     text-decoration: none;
   }
   body {
-    font-family: "Nanum Gothic Coding";
+    font-family: "IBM Plex Mono";
     background-color: #f1f1f1;
   }
   
   h1 {
-    font-family: "Nanum Gothic";
+    font-family: "Open Sans";
     /* font-size: 1.8rem; */
     font-weight: normal;
   }
