@@ -4,7 +4,8 @@
   align-items: center; 
   background-color: #49b3b3;
   padding: 1.5rem;
-  letter-spacing: 0.1em;;
+  /* letter-spacing: 0.1em; */
+  font-family: "Gothic A1";
 }
 .nav-links {
   text-transform: capitalize;
