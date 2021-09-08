@@ -2,12 +2,13 @@ import * as React from "react";
 import Layout from "../components/Layout";
 import { links, listLinks } from "./socialLinks.module.css"
 import "./index.module.css"
+import Seo from "../components/Seo"
 
 // Homepage
 const IndexPage = () => {
   return (
     <Layout>
-      <title>Inicio</title>
+    <Seo title="Inicio" />
       <h1>
       <br />
         Hola{" "}

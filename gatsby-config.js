@@ -4,8 +4,12 @@ require("dotenv").config({
 
 module.exports = {
   siteMetadata: {
+    title: "Inicio",
+    titleTemplate: "%s | Yulianny Betancort",
+    description: "Sitio oficial de Yulianny Betancort, dónde encontrarás los proyectos y el trayecto en el mundo del Desarrollo de Software como Ingeniero de Sistemas.",
     siteUrl: "https://www.yuliannydev.me",
-    title: "website-official",
+    image: "/images/og.jpg",
+    twitterUsername: "@yuliannydev",
   },
   plugins: [
     "gatsby-plugin-emotion",
