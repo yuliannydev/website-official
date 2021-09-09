@@ -10,6 +10,7 @@ const ContactPage = () => {
         <Seo title="Contacto" />
         <title>Contacto</title>
         <h1>
+        <br />
           Hola desde la página de Contacto{" "}
           <span role="img" aria-label="Hello">
             👋

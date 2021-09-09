@@ -8,7 +8,8 @@ const AboutPage = () => {
     <Layout>
       <main>
         <Seo title="Sobre mí" />
-        <h1>Nada que ver todavía...</h1>
+        <h1>
+        <br />Nada que ver todavía...</h1>
         <Link to="/">Regresar al Inicio</Link>
       </main>
     </Layout>

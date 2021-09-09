@@ -1,5 +1,6 @@
 html, body {
-    min-height: 100%;
+    min-height: 50%;
+    
   }
   * {
     line-height: 1.6em;
@@ -8,6 +9,7 @@ html, body {
     text-decoration: none;
   }
   body {
+
     font-family: "IBM Plex Mono";
     background-color: #f1f1f1;
   }

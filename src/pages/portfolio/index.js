@@ -9,6 +9,7 @@ const Portfolio = () => {
       <main>
         <Seo title="Portafolio" />
         <h1>
+        <br />
           Proximamente{" "}
           <span role="img" aria-label="Rock U">
             🤟
