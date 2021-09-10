@@ -3,6 +3,8 @@ import Layout from "../components/Layout";
 import { links, listLinks } from "./socialLinks.module.css"
 import "./index.module.css"
 import Seo from "../components/Seo"
+import BoxRetro from '../components/BoxRetro';
+
 
 // Homepage
 const IndexPage = () => {
@@ -67,6 +69,9 @@ const IndexPage = () => {
                     </a>
                 </li>
             </ul>
+            <BoxRetro>
+              <a href="" target="_blank">Descargar CV</a>
+            </BoxRetro>
     </Layout>
   );
 };
