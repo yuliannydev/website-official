@@ -1,12 +1,11 @@
-import React from "react";
-import Layout from "../../components/Layout";
-import { Link } from "gatsby";
-import Seo from '../../components/Seo';
+import React from 'react'
+import Layout from '../../components/Layout'
+import Seo from '../../components/Seo'
+import { Link } from 'gatsby'
 
-const Portfolio = () => {
-  return (
-    <Layout>
-      <main>
+const PortfolioHome = () => {
+    return (
+        <Layout>
         <Seo title="Portafolio" />
         <h1>
         <br />
@@ -15,10 +14,10 @@ const Portfolio = () => {
             🤟
           </span>
         </h1>
+        <br /><br />
         <Link to="/">Regresar al Inicio</Link>
-      </main>
-    </Layout>
-  );
-};
+        </Layout>
+    )
+}
 
-export default Portfolio;
+export default PortfolioHome

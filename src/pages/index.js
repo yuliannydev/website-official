@@ -70,7 +70,7 @@ const IndexPage = () => {
                 </li>
             </ul>
             <BoxRetro>
-              <a href="" target="_blank">Descargar CV</a>
+              <a href="#" target="_blank">Descargar CV</a>
             </BoxRetro>
     </Layout>
   );
