@@ -21,7 +21,7 @@ const AboutPage = () => {
             <h4>Uno de mis hobbies favoritos son:</h4>
             <p>- Los videojuegos.</p>
             <p>- Aportar a la comunidad de Twitter.</p>
-            <p>- Aportar a comunidades de Desarrollo de Software.</p>
+            <p>- Aportar a comunidades de Desarrollo de Software en Discord.</p>
             <p>- Leer sobre los avances de la Tecnología.</p>
         </BoxRetro>
         <br /><br />

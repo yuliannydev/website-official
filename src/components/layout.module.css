@@ -5,6 +5,7 @@
   padding: 30px 40px;
   max-width: 1200px;
   box-sizing: border-box;
+  overflow: hidden;
   /* display: flex;
   align-items: center;
   justify-content: center; */
