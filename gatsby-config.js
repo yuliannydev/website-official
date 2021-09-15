@@ -12,15 +12,11 @@ module.exports = {
     twitterUsername: "@yuliannydev",
   },
   plugins: [
+    `gatsby-plugin-image`,
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`, // Needed for dynamic images
     "gatsby-plugin-emotion",
     "gatsby-plugin-gatsby-cloud",
     "gatsby-plugin-react-helmet",
-    {
-      resolve: "gatsby-source-graphcms",
-      options: {
-        endpoint: process.env.GRAPHCMS_ENDPOINT,
-        token: process.env.GRAPHCMS_TOKEN,
-      },
-    },
   ],
 };

@@ -8,20 +8,28 @@ import BoxRetro from '../components/BoxRetro';
 const AboutPage = () => {
   return (
     <Layout>
-      <main>
         <Seo title="Sobre mí" />
         <br />
         <BoxRetro>
-        <h1>Nada que ver todavía...</h1>
-            <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <h3>Hola{" "}<span role="img" aria-label="Hi Girl Emoji">🙋‍♀️,</span></h3>
+        <br />
+        <p>Mi Nombre es Yulianny Betancourt, y Soy Ingeniero de Sistemas.</p>
+            <p>Me estoy especializando en el Desarrollo Frontend, Con las tecnologías Gatsbyjs, HTML, CSS y JavaScript. </p>
+            
+            <p>Este proceso lo estoy haciendo aplicando la Metodología KanBan.</p>
             <br />
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <h4>Uno de mis hobbies favoritos son:</h4>
+            <p>- Los videojuegos.</p>
+            <p>- Aportar a la comunidad de Twitter.</p>
+            <p>- Aportar a comunidades de Desarrollo de Software.</p>
+            <p>- Leer sobre los avances de la Tecnología.</p>
         </BoxRetro>
         <br /><br />
         <Link to="/">Regresar al Inicio</Link>
-      </main>
+        
     </Layout>
   );
 };
 
 export default AboutPage;
+
