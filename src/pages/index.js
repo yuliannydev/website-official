@@ -1,6 +1,6 @@
 import * as React from "react";
 import Layout from "../components/Layout";
-import { links, listLinks, contact } from "./index.module.css"
+import { links, listLinks, contact, name } from "./index.module.css"
 import Seo from "../components/Seo"
 import BoxRetro from '../components/BoxRetro';
 
@@ -11,13 +11,12 @@ const IndexPage = () => {
     <Layout>
     <Seo title="Inicio" />
       <h1>
-      <br />
         Hola{" "}
         <span role="img" aria-label="World emoji">
           🌏 
         </span>
         <br />
-        <span>— Mi nombre es <b>Yulianny Betancourt</b></span>
+        <span>— Mi nombre es <b className={name}>Yulianny Betancourt</b></span>
         <br />
         <span>— Soy <b>Ingeniero de Sistemas</b></span>
         <br />
@@ -72,7 +71,7 @@ const IndexPage = () => {
                     </a>
                 </li>
             </ul>
-            <div className="contact">
+            <div className={contact}>
             <BoxRetro>
               <a href="#" target="_blank">Descargar CV <span role="img" aria-label="Curriculum Vitae">💾</span></a>
             </BoxRetro>

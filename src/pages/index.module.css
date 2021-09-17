@@ -18,3 +18,10 @@
     display: flex;
     justify-content: center;
 }
+
+.name {
+    background: repeating-linear-gradient(53.01deg, #26b3bd 0%, #11cccc 100%); 
+    background-repeat: repeat-y;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

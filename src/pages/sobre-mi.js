@@ -9,7 +9,6 @@ const AboutPage = () => {
   return (
     <Layout>
         <Seo title="Sobre mí" />
-        <br />
         <BoxRetro>
         <h3>Hola{" "}<span role="img" aria-label="Hi Girl Emoji">🙋‍♀️,</span></h3>
         <br />
