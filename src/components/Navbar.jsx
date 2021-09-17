@@ -10,14 +10,21 @@ import {
 const Navbar = () => {
   return (
     <nav className={navbar}>
-      <ul className={navLinks}>
-        <li className={navLinksItems}>
-          <Link className={navLinksTexts} to="/">
+      <h2>
+        <Link className={navLinksTexts} to="/">
           <span role="img" aria-label="Rayito">
-            ⚡
+          🏠
+          </span>
+        </Link>
+      </h2>
+      <ul className={navLinks}>
+       {/*  <li className={navLinksItems}>
+          <Link className={navLinksTexts} to="/">
+          <span role="img" aria-label="Home">
+          🏠
           </span>
           </Link>
-        </li>
+        </li> */}
         <li className={navLinksItems}>
           <Link className={navLinksTexts} to="/sobre-mi">
             Sobre mí

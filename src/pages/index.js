@@ -1,7 +1,6 @@
 import * as React from "react";
 import Layout from "../components/Layout";
-import { links, listLinks } from "./socialLinks.module.css"
-import "./index.module.css"
+import { links, listLinks, contact } from "./index.module.css"
 import Seo from "../components/Seo"
 import BoxRetro from '../components/BoxRetro';
 
@@ -21,7 +20,11 @@ const IndexPage = () => {
         <span>— Mi nombre es <b>Yulianny Betancourt</b></span>
         <br />
         <span>— Soy <b>Ingeniero de Sistemas</b></span>
+        <br />
+        <span>— Y <b>Frontend Developer</b></span>
       </h1>
+      <br />
+      <div className={contact}>¿Te gustaría contactar conmigo?</div>
       <ul className={listLinks}>
                 <li className={links}>
                     <a 
@@ -69,9 +72,11 @@ const IndexPage = () => {
                     </a>
                 </li>
             </ul>
+            <div className="contact">
             <BoxRetro>
-              <a href="#" target="_blank">Descargar CV</a>
+              <a href="#" target="_blank">Descargar CV <span role="img" aria-label="Curriculum Vitae">💾</span></a>
             </BoxRetro>
+            </div>
     </Layout>
   );
 };
