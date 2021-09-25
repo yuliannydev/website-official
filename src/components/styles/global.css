@@ -1,21 +1,18 @@
-html, body {
-    min-height: 50%;
-    
-  }
   * {
     line-height: 1.6em;
     margin: 0;
-    padding: 0;
     text-decoration: none;
+    box-sizing: border-box;
   }
   body {
-
     font-family: "IBM Plex Mono";
     background-color: #fff;
   }
   
   h1 {
     font-family: "Open Sans";
-    /* font-size: 1.8rem; */
     font-weight: normal;
+  }
+  p {
+    font-size: 1rem;
   }

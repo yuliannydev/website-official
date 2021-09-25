@@ -6,9 +6,9 @@ import { Link } from 'gatsby'
 const PortfolioHome = () => {
     return (
         <Layout>
+          {/*TODO: Mapear slug del portfolio */}
         <Seo title="Portafolio" />
         <h1>
-        <br />
           Proximamente{" "}
           <span role="img" aria-label="Rock U">
             🤟

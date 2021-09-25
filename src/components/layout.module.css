@@ -1,11 +1,9 @@
-.content {
-  /* padding: 2rem; */
-  width: 100%;
-  margin: 10px auto;
-  padding: 30px 40px;
-  max-width: 1200px;
+.container {
   box-sizing: border-box;
-  /* display: flex;
-  align-items: center;
-  justify-content: center; */
 }
+
+.content {
+  max-width: 760px;
+  margin: 40px auto;
+  padding: 20px;
+} 

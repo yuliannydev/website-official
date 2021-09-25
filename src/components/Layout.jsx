@@ -6,7 +6,7 @@ import "./styles/global.css";
 
 const Layout = ({ children }) => {
   return (
-    <div>
+    <div className="container">
       <Navbar />
       <div className={content}>
         {children}
