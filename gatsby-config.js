@@ -6,7 +6,8 @@ module.exports = {
   siteMetadata: {
     title: "Inicio",
     titleTemplate: "%s | Yulianny Betancort",
-    description: "Sitio oficial de Yulianny Betancort, dónde encontrarás los proyectos y el trayecto en el mundo del Desarrollo de Software como Ingeniero de Sistemas.",
+    description:
+      "Sitio oficial de Yulianny Betancort, dónde encontrarás los proyectos y el trayecto en el mundo del Desarrollo de Software como Ingeniero de Sistemas.",
     siteUrl: "https://www.yuliannydev.me",
     image: "/images/og.jpg",
     twitterUsername: "@yuliannydev",
@@ -16,10 +17,11 @@ module.exports = {
     "gatsby-plugin-gatsby-cloud",
     "gatsby-plugin-react-helmet",
     {
-      resolve: "gatsby-source-graphcms",
+      resolve: "gatsby-source-strapi",
       options: {
-        endpoint: process.env.GRAPHCMS_ENDPOINT,
-        token: process.env.GRAPHCMS_TOKEN,
+        apiURL: process.env.STRAPI_API_URL,
+        collectionTypes: ["portfolio"],
+        queryLimit: 1000,
       },
     },
   ],
