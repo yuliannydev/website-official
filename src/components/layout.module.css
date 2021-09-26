@@ -1,5 +1,6 @@
 .container {
   box-sizing: border-box;
+  padding-bottom: 4rem;
 }
 
 .content {

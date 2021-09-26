@@ -1,51 +1,62 @@
 import React from "react";
-import { graphql, StaticQuery } from "gatsby";
+import { graphql, useStaticQuery } from "gatsby";
 import Layout from "../../components/Layout";
 import BoxRetro from "../../components/BoxRetro";
-import { StaticImage } from "gatsby-plugin-image";
+import ReactMarkdown from "react-markdown";
+import { GatsbyImage, getImage } from "gatsby-plugin-image";
+import { visit, listPortfolio } from "./index.module.css";
+import Seo from "../../components/Seo";
 
-const PortfolioHome = () => (
-  <StaticQuery
-    query={graphql`
-      query allPortfolio {
-        allStrapiPortfolio {
-          nodes {
-            strapiId
-            Title
-            Description
-            Cover {
-              url
-            }
-            Enlace
-          }
+const portfolioQuery = graphql`
+  query {
+    allGraphCmsPortfolio {
+      nodes {
+        title
+        description {
+          markdown
         }
+        image {
+          url
+          gatsbyImageData(width: 360, layout: FIXED, placeholder: BLURRED)
+        }
+        tag
       }
-    `}
-    render={(data) => (
-      <Layout>
-        {data.allStrapiPortfolio.nodes.map((resolve, key) => (
-          <BoxRetro>
-            <h3>{resolve.Title}</h3>
-            <ul>
-              <li key={key}>
-                <section>{resolve.Description}</section>
-                <StaticImage
-                  src="http://localhost:1337/uploads/main_2c1092a965.png"
-                  alt="Batman"
-                />
-                <a
-                  href={resolve.Enlace}
-                  rel="noreferrer noopener"
-                  target="_blank"
-                >
-                  VER DEMO
-                </a>
-              </li>
-            </ul>
-          </BoxRetro>
-        ))}
-      </Layout>
-    )}
-  />
-);
+    }
+  }
+`;
+
+const PortfolioHome = () => {
+  const { allGraphCmsPortfolio } = useStaticQuery(portfolioQuery);
+
+  return (
+    <Layout>
+      <Seo title="Portafolio" />
+      {allGraphCmsPortfolio.nodes.map((resolve, key) => (
+        <BoxRetro>
+          <h3>{resolve.title}</h3>
+          <ul className={listPortfolio}>
+            <li key={key}>
+              <ReactMarkdown>{resolve.description.markdown}</ReactMarkdown>
+              <br />
+              <GatsbyImage
+                image={getImage(resolve.image)}
+                alt={resolve.title}
+              />
+              <br />
+              <a
+                className={visit}
+                href="https://website-batman-with-html-css.vercel.app"
+                rel="noreferrer noopener"
+                target="_blank"
+              >
+                VER DEMO
+              </a>
+            </li>
+          </ul>
+        </BoxRetro>
+      ))}
+    </Layout>
+  );
+};
+
 export default PortfolioHome;

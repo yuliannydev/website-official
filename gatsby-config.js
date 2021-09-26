@@ -20,11 +20,10 @@ module.exports = {
     "gatsby-plugin-gatsby-cloud",
     "gatsby-plugin-react-helmet",
     {
-      resolve: "gatsby-source-strapi",
+      resolve: "gatsby-source-graphcms",
       options: {
-        apiURL: process.env.STRAPI_API_URL || "http://localhost:1337",
-        collectionTypes: [`portfolio`],
-        queryLimit: 1000,
+        endpoint: process.env.GRAPHCMS_ENDPOINT,
+        token: process.env.GRAPHCMS_TOKEN,
       },
     },
   ],

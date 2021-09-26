@@ -1,15 +1,26 @@
-
 .container {
-    display: inline-block;
-    margin-top: 20px;
-    background-color: #f1f1f1;
-    box-shadow: 10px 15px #26b3bd;
+  display: inline-block;
+  margin-top: 20px;
+  background-color: #f1f1f1;
+  box-shadow: 10px 15px #26b3bd;
+  width: 560px;
 }
 .content {
-    display: inline-block;
-    align-items: center;
-    justify-content: center;
-    text-align: justify;
-    padding: 1rem;
-    box-shadow: 5px 8px #11cccc;
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  text-align: justify;
+  padding: 1rem;
+  box-shadow: 5px 8px #11cccc;
+  line-height: 2em;
+  width: 560px;
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    width: 100%;
+  }
+  .content {
+    width: 100%;
+  }
 }

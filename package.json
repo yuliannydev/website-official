@@ -27,10 +27,11 @@
     "gatsby-plugin-react-helmet": "^4.11.0",
     "gatsby-plugin-sharp": "^3.13.0",
     "gatsby-source-filesystem": "^3.13.0",
-    "gatsby-source-strapi": "^1.0.2",
+    "gatsby-source-graphcms": "^2.6.0",
     "gatsby-transformer-sharp": "^3.14.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
-    "react-helmet": "^6.1.0"
+    "react-helmet": "^6.1.0",
+    "react-markdown": "^7.0.1"
   }
 }

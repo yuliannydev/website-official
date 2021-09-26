@@ -1,0 +1,9 @@
+.visit {
+  text-decoration: none;
+}
+.list-portfolio {
+  list-style: none;
+}
+
+@media screen and (max-width: 600px) {
+}

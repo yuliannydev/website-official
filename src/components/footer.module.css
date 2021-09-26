@@ -12,11 +12,11 @@
   font-family: "Open Sans";
   border-top: 1px solid #f2f2f2;
 }
-@media screen and (max-width: 600px) {
+/* @media screen and (max-width: 600px) {
   .footer {
     position: relative;
     left: 0;
     bottom: 0;
     border-top: 1px solid #f2f2f2;
   }
-}
+} */

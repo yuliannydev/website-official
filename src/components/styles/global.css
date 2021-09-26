@@ -1,18 +1,18 @@
-  * {
-    line-height: 1.6em;
-    margin: 0;
-    text-decoration: none;
-    box-sizing: border-box;
-  }
-  body {
-    font-family: "IBM Plex Mono";
-    background-color: #fff;
-  }
-  
-  h1 {
-    font-family: "Open Sans";
-    font-weight: normal;
-  }
-  p {
-    font-size: 1rem;
-  }
+* {
+  line-height: 1.6em;
+  margin: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+body {
+  font-family: "IBM Plex Mono";
+  background-color: #fff;
+}
+
+h1 {
+  font-family: "Open Sans";
+  font-weight: normal;
+}
+p {
+  font-size: 1rem;
+}

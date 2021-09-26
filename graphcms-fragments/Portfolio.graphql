@@ -1,0 +1,56 @@
+fragment Portfolio on Portfolio {
+  stage
+  remoteId: id
+  createdAt
+  updatedAt
+  publishedAt
+  title
+  slug
+  description {
+    ... on PortfolioDescriptionRichText {
+      raw
+      json
+      html
+      markdown
+      text
+      references {
+        ... on Asset {
+          remoteTypeName: __typename
+          remoteId: id
+          locale
+          stage
+        }
+      }
+    }
+  }
+  tag
+  createdBy {
+    ... on User {
+      remoteTypeName: __typename
+      remoteId: id
+      stage
+    }
+  }
+  updatedBy {
+    ... on User {
+      remoteTypeName: __typename
+      remoteId: id
+      stage
+    }
+  }
+  publishedBy {
+    ... on User {
+      remoteTypeName: __typename
+      remoteId: id
+      stage
+    }
+  }
+  image {
+    ... on Asset {
+      remoteTypeName: __typename
+      remoteId: id
+      locale
+      stage
+    }
+  }
+}

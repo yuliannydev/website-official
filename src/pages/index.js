@@ -85,7 +85,7 @@ const IndexPage = () => {
       <div className={contact}>
         <BoxRetro>
           <a
-            href="./resumen.pdf"
+            href="https://media.graphcms.com/azs0PzUTHWkn4fs2hQif"
             rel="noreferrer noopener"
             target="_blank"
             download

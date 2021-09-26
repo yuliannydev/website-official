@@ -1,7 +1,7 @@
 .navbar {
   display: flex;
   justify-content: space-between;
-  align-items: center; 
+  align-items: center;
   background-color: #49b3b3;
   padding: 1.5rem;
   /* letter-spacing: 0.1em; */
@@ -24,12 +24,9 @@
   text-decoration: none;
   color: #fff;
   padding: 10px;
-  
 }
 
 .nav-links-texts:hover {
   text-decoration: underline;
   color: #fff;
 }
-
-
