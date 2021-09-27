@@ -16,7 +16,7 @@ const Footer = () => {
           rel="noopener noreferrer"
         >
           <svg
-            fill="#000000"
+            fill="#639"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
             width={22}
