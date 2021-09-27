@@ -2,9 +2,8 @@ import React from "react";
 import { graphql, useStaticQuery } from "gatsby";
 import Layout from "../../components/Layout";
 import BoxRetro from "../../components/BoxRetro";
-import ReactMarkdown from "react-markdown";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
-import { visit, listPortfolio } from "./index.module.css";
+import { listPortfolio, title, visit } from "./index.module.css";
 import Seo from "../../components/Seo";
 
 const portfolioQuery = graphql`
@@ -33,16 +32,16 @@ const PortfolioHome = () => {
       <Seo title="Portafolio" />
       {allGraphCmsPortfolio.nodes.map((resolve, key) => (
         <BoxRetro>
-          <h3>{resolve.title}</h3>
+          <h3 className={title}>{resolve.title}</h3>
           <ul className={listPortfolio}>
             <li key={key}>
-              <ReactMarkdown>{resolve.description.markdown}</ReactMarkdown>
-              <br />
+              {/* <ReactMarkdown>{resolve.description.markdown}</ReactMarkdown>
+              <br /> */}
               <GatsbyImage
                 image={getImage(resolve.image)}
                 alt={resolve.title}
               />
-              <br />
+
               <a
                 className={visit}
                 href="https://website-batman-with-html-css.vercel.app"

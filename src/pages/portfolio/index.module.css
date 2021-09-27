@@ -1,8 +1,14 @@
 .visit {
   text-decoration: none;
+  color: #000;
 }
 .list-portfolio {
   list-style: none;
+  padding-left: 0;
+  text-align: center;
+}
+.title {
+  text-align: center;
 }
 
 @media screen and (max-width: 600px) {
