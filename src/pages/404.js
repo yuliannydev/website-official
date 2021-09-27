@@ -24,7 +24,7 @@ const NotFoundPage = () => {
           </>
         ) : null}
         <br />
-        <Link to="/">Regresar</Link>
+        <Link to="/">Regresar al Inicio</Link>
       </p>
     </Layout>
   );

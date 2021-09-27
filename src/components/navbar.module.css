@@ -16,6 +16,7 @@
   display: flex;
   list-style: none;
   line-height: 1.6;
+  padding-left: 0;
 }
 .nav-links-items {
   padding-right: 1rem;
@@ -29,4 +30,10 @@
 .nav-links-texts:hover {
   text-decoration: underline;
   color: #fff;
+}
+
+@media screen and (max-width: 600px) {
+  .navbar {
+    font-size: 1.3rem;
+  }
 }

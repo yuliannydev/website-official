@@ -1,5 +1,5 @@
 import React from "react";
-import { graphql, useStaticQuery } from "gatsby";
+import { graphql, useStaticQuery, Link } from "gatsby";
 import Layout from "../../components/Layout";
 import BoxRetro from "../../components/BoxRetro";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
@@ -54,6 +54,9 @@ const PortfolioHome = () => {
           </ul>
         </BoxRetro>
       ))}
+      <br />
+      <br />
+      <Link to="/">Regresar al Inicio</Link>
     </Layout>
   );
 };
