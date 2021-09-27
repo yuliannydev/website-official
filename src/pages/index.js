@@ -1,6 +1,6 @@
 import * as React from "react";
 import Layout from "../components/Layout";
-import { links, listLinks, contact, name } from "./index.module.css";
+import { links, listLinks, contact, name, download } from "./index.module.css";
 import Seo from "../components/Seo";
 import BoxRetro from "../components/BoxRetro";
 
@@ -85,6 +85,7 @@ const IndexPage = () => {
       <div className={contact}>
         <BoxRetro>
           <a
+            className={download}
             href="https://media.graphcms.com/azs0PzUTHWkn4fs2hQif"
             rel="noreferrer noopener"
             target="_blank"

@@ -18,6 +18,7 @@
 .contact {
   display: flex;
   justify-content: center;
+  text-align: center;
 }
 
 .name {
@@ -25,4 +26,8 @@
   background-repeat: repeat-y;
   background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.download {
+  text-align: center;
 }

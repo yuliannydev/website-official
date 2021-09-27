@@ -16,7 +16,7 @@ const portfolioQuery = graphql`
         }
         image {
           url
-          gatsbyImageData(width: 360, layout: FIXED, placeholder: BLURRED)
+          gatsbyImageData(width: 300, placeholder: BLURRED)
         }
         tag
       }
