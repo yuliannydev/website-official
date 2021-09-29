@@ -14,6 +14,7 @@ const Footer = () => {
           href="https://www.gatsbyjs.com/"
           target="_blank"
           rel="noopener noreferrer"
+          aria-label="Gatsby"
         >
           <svg
             fill="#639"

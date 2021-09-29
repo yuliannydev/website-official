@@ -35,6 +35,7 @@ const IndexPage = () => {
             href="https://www.linkedin.com/in/yulianny-betancourt/"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="Linkedin"
           >
             <svg
               fill="#000000"
@@ -52,6 +53,7 @@ const IndexPage = () => {
             href="https://github.com/yuliannydev/"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="Github"
           >
             <svg
               fill="#000000"
@@ -69,6 +71,7 @@ const IndexPage = () => {
             href="https://twitter.com/yuliannydev/"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="Twitter"
           >
             <svg
               fill="#000000"
