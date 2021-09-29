@@ -41,16 +41,20 @@ const PortfolioHome = () => {
                 image={getImage(resolve.image)}
                 alt={resolve.title}
               />
-
-              <a
-                className={visit}
-                href="https://website-batman-with-html-css.vercel.app"
-                rel="noreferrer noopener"
-                target="_blank"
-              >
-                VER DEMO
-              </a>
             </li>
+            <li>
+              {" "}
+              #{resolve.tag[0]} #{resolve.tag[1]} #{resolve.tag[2]}
+            </li>
+
+            <a
+              className={visit}
+              href="https://website-batman-with-html-css.vercel.app"
+              rel="noreferrer noopener"
+              target="_blank"
+            >
+              VER DEMO
+            </a>
           </ul>
         </BoxRetro>
       ))}

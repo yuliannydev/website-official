@@ -1,10 +1,18 @@
 .container {
   box-sizing: border-box;
   padding-bottom: 4rem;
+  /* margin: 0px auto; */
 }
 
 .content {
-  max-width: 760px;
+  max-width: 1200px;
   margin: 40px auto;
-  padding: 2rem;
+  /* padding: 2rem; */
+  padding: 8vh;
+}
+
+@media screen and (max-width: 600px) {
+  .content {
+    padding: 2rem;
+  }
 }
