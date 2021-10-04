@@ -20,6 +20,7 @@ module.exports = {
     "gatsby-plugin-emotion",
     "gatsby-plugin-gatsby-cloud",
     "gatsby-plugin-react-helmet",
+    "@chakra-ui/gatsby-plugin",
     {
       resolve: "gatsby-source-graphcms",
       options: {

@@ -13,12 +13,12 @@ const Navbar = () => {
       <h2>
         <Link className={navLinksTexts} to="/">
           <span role="img" aria-label="Rayito">
-          🏠
+            🏠
           </span>
         </Link>
       </h2>
       <ul className={navLinks}>
-       {/*  <li className={navLinksItems}>
+        {/*  <li className={navLinksItems}>
           <Link className={navLinksTexts} to="/">
           <span role="img" aria-label="Home">
           🏠
