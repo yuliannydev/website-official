@@ -1,43 +1,64 @@
-import * as React from "react";
-import { Link } from "gatsby";
-import Layout from "../components/Layout";
-import Seo from "../components/Seo";
-import BoxRetro from "../components/BoxRetro";
+import * as React from 'react';
+import { graphql, Link, useStaticQuery } from 'gatsby';
+import { GatsbyImage, getImage } from 'gatsby-plugin-image';
+import Layout from '../components/Layout';
+import Seo from '../components/Seo';
+import BoxRetro from '../components/BoxRetro';
+import { aboutMe } from './sobre-mi.module.css';
+
+const biographyQuery = graphql`
+    query {
+        biography: graphCmsBiography {
+            title
+            content {
+                markdown
+            }
+            subContent {
+                markdown
+            }
+            image {
+                gatsbyImageData(width: 250, placeholder: BLURRED)
+            }
+        }
+    }
+`;
 
 const AboutPage = () => {
-  return (
-    <Layout>
-      <Seo title="Sobre mí" />
-      <BoxRetro>
-        <h3>
-          Hola{" "}
-          <span role="img" aria-label="Hi Girl Emoji">
-            🙋‍♀️,
-          </span>
-        </h3>
-        <br />
-        <p>Mi Nombre es Yulianny Betancourt, y Soy Ingeniero de Sistemas.</p>
-        <p>
-          Actualmente me estoy especializando en el Desarrollo Frontend, Con las
-          tecnologías HTML, CSS, JavaScript, Gatsbyjs, y React.js{" "}
-        </p>
+    const { biography } = useStaticQuery(biographyQuery);
+    console.log(biography);
+    return (
+        <Layout>
+            <Seo title="Sobre mí" />
+            <BoxRetro>
+                <h2>
+                    {biography.title}{' '}
+                    <span role="img" aria-label="Hi Girl Emoji">
+                        🙋‍♀️,
+                    </span>
+                </h2>
+                {/* <GatsbyImage image={getImage(biography.image)} alt="Profile" /> */}
+                <br />
+                <div className={aboutMe}>
+                    <p>
+                        <span role="img" aria-label="Mensaje hablado">
+                            📢{' '}
+                        </span>
+                        {biography.content.markdown}{' '}
+                    </p>
+                    <p>
+                        <span role="img" aria-label="">
+                            🤟{' '}
+                        </span>
+                        {biography.subContent.markdown}
+                    </p>
+                </div>
+            </BoxRetro>
 
-        <p>Este proceso lo estoy haciendo aplicando la Metodología KanBan.</p>
-        <br />
-        <h4>Uno de mis hobbies favoritos son:</h4>
-        <p>- Los videojuegos.</p>
-        <p>- Aportar a la comunidad de Twitter.</p>
-        <p>- Aportar a comunidades de Desarrollo de Software en Discord.</p>
-        <p>- Leer sobre los avances de la Tecnología.</p>
-        <br />
-        <h4>¿Te gustaría trabajar conmigo?</h4>
-        <p>Contáctame, y con gusto podemos charlar.</p>
-      </BoxRetro>
-      <br />
-      <br />
-      <Link to="/">Regresar al Inicio</Link>
-    </Layout>
-  );
+            <br />
+            <br />
+            <Link to="/">Regresar al Inicio</Link>
+        </Layout>
+    );
 };
 
 export default AboutPage;

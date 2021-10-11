@@ -1,18 +1,23 @@
 .container {
-  box-sizing: border-box;
-  padding-bottom: 4rem;
-  /* margin: 0px auto; */
+    box-sizing: border-box;
+    padding-bottom: 4rem;
+    margin: 0px auto;
+    position: relative;
+    padding: 0 auto;
 }
 
 .content {
-  max-width: 1200px;
-  margin: 40px auto;
-  /* padding: 2rem; */
-  padding: 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 8vh;
 }
 
 @media screen and (max-width: 600px) {
-  .content {
-    padding: 2rem;
-  }
+    .content {
+        padding: 2rem;
+    }
 }

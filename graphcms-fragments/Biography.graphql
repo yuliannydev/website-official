@@ -1,13 +1,12 @@
-fragment Portfolio on Portfolio {
+fragment Biography on Biography {
   stage
   remoteId: id
   createdAt
   updatedAt
   publishedAt
   title
-  slug
-  description {
-    ... on PortfolioDescriptionRichText {
+  content {
+    ... on BiographyContentRichText {
       raw
       json
       html
@@ -23,8 +22,14 @@ fragment Portfolio on Portfolio {
       }
     }
   }
-  tag
-  link
+  subContent {
+    ... on RichText {
+      raw
+      html
+      markdown
+      text
+    }
+  }
   createdBy {
     ... on User {
       remoteTypeName: __typename

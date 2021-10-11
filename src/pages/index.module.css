@@ -1,33 +1,33 @@
 .links {
-  list-style-type: none;
-  display: inline-block;
-  margin: 20px 20px;
-  padding: 10px 0;
-  /* margin: 50px 30px;
+    list-style-type: none;
+    display: inline-block;
+    margin: 20px 20px;
+    padding: 10px 0;
+    /* margin: 50px 30px;
     padding: 30px 40px; */
-  /*  max-width: 60%; */
+    /*  max-width: 60%; */
 }
 
 .list-links {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
 }
 
 .contact {
-  display: flex;
-  justify-content: center;
-  text-align: center;
+    display: flex;
+    justify-content: center;
+    text-align: center;
 }
 
 .name {
-  background: repeating-linear-gradient(53.01deg, #26b3bd 0%, #11cccc 100%);
-  background-repeat: repeat-y;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
+    background: repeating-linear-gradient(53.01deg, #26b3bd 0%, #11cccc 100%);
+    background-repeat: repeat-y;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .download {
-  text-align: center;
+    text-align: center;
 }

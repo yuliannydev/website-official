@@ -55,5 +55,12 @@ fragment Asset on Asset {
       stage
     }
   }
+  imageBiography {
+    ... on Biography {
+      remoteTypeName: __typename
+      remoteId: id
+      stage
+    }
+  }
   url
 }
