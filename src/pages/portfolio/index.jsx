@@ -11,6 +11,7 @@ const portfolioQuery = graphql`
     query {
         allGraphCmsPortfolio {
             nodes {
+                id
                 title
                 description {
                     markdown

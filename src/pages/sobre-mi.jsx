@@ -1,6 +1,5 @@
 import * as React from 'react';
 import { graphql, Link, useStaticQuery } from 'gatsby';
-import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 import Layout from '../components/Layout';
 import Seo from '../components/Seo';
 import BoxRetro from '../components/BoxRetro';
@@ -25,7 +24,7 @@ const biographyQuery = graphql`
 
 const AboutPage = () => {
     const { biography } = useStaticQuery(biographyQuery);
-    console.log(biography);
+
     return (
         <Layout>
             <Seo title="Sobre mí" />
