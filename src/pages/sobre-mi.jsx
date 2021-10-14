@@ -1,8 +1,8 @@
-import * as React from 'react';
 import { graphql, Link, useStaticQuery } from 'gatsby';
+import * as React from 'react';
+import BoxRetro from '../components/BoxRetro';
 import Layout from '../components/Layout';
 import Seo from '../components/Seo';
-import BoxRetro from '../components/BoxRetro';
 import { aboutMe } from './sobre-mi.module.css';
 
 const biographyQuery = graphql`

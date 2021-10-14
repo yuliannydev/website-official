@@ -1,11 +1,9 @@
-import React from 'react';
-import { graphql, useStaticQuery, Link } from 'gatsby';
+import { graphql, Link, useStaticQuery } from 'gatsby';
 import { GatsbyImage, getImage } from 'gatsby-plugin-image';
-import ReactMarkdown from 'react-markdown';
-import Layout from '../../components/Layout';
+import React from 'react';
 import BoxRetro from '../../components/BoxRetro';
-import { listPortfolio, title, description, visit } from './index.module.css';
-import Seo from '../../components/Seo';
+import Layout from '../../components/Layout';
+import { description, listPortfolio, title, visit } from './index.module.css';
 
 const portfolioQuery = graphql`
     query {
@@ -32,35 +30,31 @@ const PortfolioHome = () => {
 
     return (
         <Layout>
-            <Seo title="Portafolio" />
-            {allGraphCmsPortfolio.nodes.map((resolve, key) => (
-                <BoxRetro>
-                    <h2 className={title}>{resolve.title}</h2>
-                    <ul className={listPortfolio}>
-                        <li key={key}>
-                            <p className={description}>
-                                <ReactMarkdown>{resolve.description.markdown}</ReactMarkdown>
-                            </p>
+            <BoxRetro>
+                {allGraphCmsPortfolio.nodes.map((portfolio) => (
+                    <ul key={portfolio.id} className={listPortfolio}>
+                        <h2 className={title}>{portfolio.title}</h2>
+                        <li key={portfolio.id}>
+                            <p className={description}>{portfolio.description.markdown}</p>
                             <br />
-                            <GatsbyImage image={getImage(resolve.image)} alt={resolve.title} />
+                            <GatsbyImage image={getImage(portfolio.image)} alt={portfolio.title} />
+                            <p>
+                                {' '}
+                                #{portfolio.tag[0]} #{portfolio.tag[1]} #{portfolio.tag[2]}
+                            </p>
                         </li>
-                        <li>
-                            {' '}
-                            #{resolve.tag[0]} #{resolve.tag[1]} #{resolve.tag[2]}
-                        </li>
-
                         <a
                             className={visit}
-                            href={resolve.link}
+                            href={portfolio.link}
                             rel="noreferrer noopener"
                             target="_blank"
-                            alt="Website Batman"
+                            alt={portfolio.title}
                         >
                             VER DEMO
                         </a>
                     </ul>
-                </BoxRetro>
-            ))}
+                ))}
+            </BoxRetro>
             <br />
             <br />
             <Link to="/">Regresar al Inicio</Link>
