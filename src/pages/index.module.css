@@ -31,3 +31,7 @@
 .download {
     text-align: center;
 }
+
+.download:hover {
+    text-decoration: underline;
+}

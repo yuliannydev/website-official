@@ -1,8 +1,9 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { Helmet } from 'react-helmet';
+/*eslint-disable*/
 import { useLocation } from '@reach/router';
-import { useStaticQuery, graphql } from 'gatsby';
+import { graphql, useStaticQuery } from 'gatsby';
+import PropTypes from 'prop-types';
+import React from 'react';
+import { Helmet } from 'react-helmet';
 
 const query = graphql`
     query Seo {
@@ -31,7 +32,7 @@ const Seo = ({ title, description, article }) => {
         description: description || defaultDescription,
         image: `${siteUrl}${image}`,
         url: `${siteUrl}${pathname}`,
-        twitterUsername: twitterUsername,
+        twitterUsername,
     };
 
     return (

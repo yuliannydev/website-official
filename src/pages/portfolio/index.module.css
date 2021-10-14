@@ -2,7 +2,12 @@
     text-decoration: none;
     color: #000;
     display: block;
-    padding-top: 1rem;
+    padding: 1rem;
+    font-weight: bold;
+}
+
+.visit:hover {
+    text-decoration: underline;
 }
 .list-portfolio {
     list-style: none;
@@ -17,4 +22,8 @@
 
 .description {
     text-align: justify;
+}
+
+hr {
+    border: 1px solid #26b3bd;
 }

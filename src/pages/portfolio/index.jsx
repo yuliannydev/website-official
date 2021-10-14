@@ -32,17 +32,16 @@ const PortfolioHome = () => {
         <Layout>
             <BoxRetro>
                 {allGraphCmsPortfolio.nodes.map((portfolio) => (
-                    <ul key={portfolio.id} className={listPortfolio}>
+                    <li key={portfolio.id} className={listPortfolio}>
                         <h2 className={title}>{portfolio.title}</h2>
-                        <li key={portfolio.id}>
-                            <p className={description}>{portfolio.description.markdown}</p>
-                            <br />
-                            <GatsbyImage image={getImage(portfolio.image)} alt={portfolio.title} />
-                            <p>
-                                {' '}
-                                #{portfolio.tag[0]} #{portfolio.tag[1]} #{portfolio.tag[2]}
-                            </p>
-                        </li>
+
+                        <p className={description}>{portfolio.description.markdown}</p>
+                        <br />
+                        <GatsbyImage image={getImage(portfolio.image)} alt={portfolio.title} />
+                        <p>
+                            {' '}
+                            #{portfolio.tag[0]} #{portfolio.tag[1]} #{portfolio.tag[2]}
+                        </p>
                         <a
                             className={visit}
                             href={portfolio.link}
@@ -52,7 +51,8 @@ const PortfolioHome = () => {
                         >
                             VER DEMO
                         </a>
-                    </ul>
+                        <hr />
+                    </li>
                 ))}
             </BoxRetro>
             <br />
