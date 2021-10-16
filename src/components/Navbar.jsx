@@ -1,5 +1,5 @@
-import React from 'react';
 import { Link } from 'gatsby';
+import React from 'react';
 import { navbar, navLinks, navLinksItems, navLinksTexts } from './navbar.module.css';
 
 const Navbar = () => {
@@ -13,13 +13,6 @@ const Navbar = () => {
                 </Link>
             </h2>
             <ul className={navLinks}>
-                {/*  <li className={navLinksItems}>
-          <Link className={navLinksTexts} to="/">
-          <span role="img" aria-label="Home">
-          🏠
-          </span>
-          </Link>
-        </li> */}
                 <li className={navLinksItems}>
                     <Link className={navLinksTexts} to="/sobre-mi">
                         Sobre mí
