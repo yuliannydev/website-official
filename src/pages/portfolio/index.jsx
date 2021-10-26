@@ -27,7 +27,7 @@ const portfolioQuery = graphql`
 
 const PortfolioHome = () => {
     const { allGraphCmsPortfolio } = useStaticQuery(portfolioQuery);
-    console.log(allGraphCmsPortfolio);
+
     return (
         <Layout>
             <BoxRetro>
