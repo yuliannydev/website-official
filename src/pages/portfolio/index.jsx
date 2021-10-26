@@ -44,7 +44,7 @@ const PortfolioHome = () => {
                         </p>
                         <a
                             className={visit}
-                            href={`https:${portfolio.link}`}
+                            href={`https://${portfolio.link}`}
                             rel="noreferrer noopener"
                             target="_blank"
                             alt={portfolio.title}
