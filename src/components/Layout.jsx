@@ -4,7 +4,6 @@ import Navbar from './Navbar';
 import { content, container } from './layout.module.css';
 import './styles/global.css';
 
-/* eslint-disable */
 const Layout = ({ children }) => {
     return (
         <div className={container}>

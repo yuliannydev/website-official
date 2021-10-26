@@ -1,8 +1,8 @@
 import * as React from 'react';
-import BoxRetro from '../components/BoxRetro';
 import Layout from '../components/Layout';
+import { links, listLinks, contact, name, download } from './index.module.css';
 import Seo from '../components/Seo';
-import { contact, download, links, listLinks, name } from './index.module.css';
+import BoxRetro from '../components/BoxRetro';
 
 // Homepage
 const IndexPage = () => (
