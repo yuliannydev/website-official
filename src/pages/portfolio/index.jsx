@@ -27,7 +27,7 @@ const portfolioQuery = graphql`
 
 const PortfolioHome = () => {
     const { allGraphCmsPortfolio } = useStaticQuery(portfolioQuery);
-
+    console.log(allGraphCmsPortfolio);
     return (
         <Layout>
             <BoxRetro>
@@ -44,7 +44,7 @@ const PortfolioHome = () => {
                         </p>
                         <a
                             className={visit}
-                            href={portfolio.link}
+                            href={`https:${portfolio.link}`}
                             rel="noreferrer noopener"
                             target="_blank"
                             alt={portfolio.title}
