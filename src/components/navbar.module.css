@@ -7,7 +7,6 @@
     font-family: 'Open Sans';
     max-width: 100%;
     margin: 0 auto;
-    border-bottom: 1px solid #f2f2f2;
     font-size: 1.1rem;
     position: sticky;
 }
@@ -28,10 +27,9 @@
     letter-spacing: 0.1rem;
 }
 
-.nav-links-texts:hover,
-.nav-links-texts:focus {
-    border-bottom: 2px solid transparent;
-    color: #fff;
+.nav-links-texts:focus,
+.nav-links-texts:hover {
+    border-bottom: 2px solid #fff;
 }
 
 @media screen and (max-width: 600px) {
@@ -39,8 +37,13 @@
         display: flex;
         flex-direction: column;
         font-size: 1.3rem;
+        align-items: center;
+        justify-content: space-between;
     }
     .nav-links {
         padding-top: 1rem;
+    }
+    .nav-links-items {
+        padding-right: 0;
     }
 }

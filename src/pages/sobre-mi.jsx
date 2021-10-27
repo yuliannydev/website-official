@@ -44,6 +44,7 @@ const AboutPage = () => {
                         </span>
                         {biography.content.markdown}{' '}
                     </p>
+                    <br />
                     <p>
                         <span role="img" aria-label="">
                             🤟{' '}
