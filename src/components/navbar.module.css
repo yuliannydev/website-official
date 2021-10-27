@@ -8,7 +8,7 @@
     max-width: 100%;
     margin: 0 auto;
     font-size: 1.1rem;
-    position: sticky;
+    position: relative;
 }
 .nav-links {
     display: flex;
@@ -37,8 +37,6 @@
         display: flex;
         flex-direction: column;
         font-size: 1.3rem;
-        align-items: center;
-        justify-content: space-between;
     }
     .nav-links {
         padding-top: 1rem;

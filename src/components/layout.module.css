@@ -1,3 +1,9 @@
+* {
+    box-sizing: border-box;
+}
+main {
+    height: 100%;
+}
 .container {
     box-sizing: border-box;
     padding-bottom: 4rem;
@@ -13,7 +19,7 @@
     flex-direction: column;
     max-width: 1200px;
     margin: 3rem auto;
-    padding: 8vh;
+    padding-top: 2rem;
 }
 
 @media screen and (max-width: 600px) {
