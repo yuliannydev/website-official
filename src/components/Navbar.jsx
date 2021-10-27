@@ -7,19 +7,12 @@ const Navbar = () => {
         <nav className={navbar}>
             <h2>
                 <Link className={navLinksTexts} to="/">
-                    <span role="img" aria-label="Rayito">
+                    <span role="img" aria-label="Inicio">
                         🏠
                     </span>
                 </Link>
             </h2>
             <ul className={navLinks}>
-                {/*  <li className={navLinksItems}>
-          <Link className={navLinksTexts} to="/">
-          <span role="img" aria-label="Home">
-          🏠
-          </span>
-          </Link>
-        </li> */}
                 <li className={navLinksItems}>
                     <Link className={navLinksTexts} to="/sobre-mi">
                         Sobre mí
