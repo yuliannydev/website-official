@@ -4,7 +4,6 @@
     align-items: center;
     background-color: #49b3b3;
     padding: 1.5rem;
-    /* letter-spacing: 0.1em; */
     font-family: 'Open Sans';
     max-width: 100%;
     margin: 0 auto;
@@ -25,13 +24,13 @@
     text-decoration: none;
     color: #000;
     padding: 10px;
-    text-transform: uppercase;
+    text-transform: capitalize;
     letter-spacing: 0.1rem;
 }
 
 .nav-links-texts:hover,
 .nav-links-texts:focus {
-    text-decoration: underline;
+    border-bottom: 2px solid transparent;
     color: #fff;
 }
 
